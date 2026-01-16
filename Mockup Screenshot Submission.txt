@@ -1,0 +1,36 @@
++----------------------------------------------------------+
+| Header: Avalanche dApp – Day 4 Backend API              |
+| Nama: Sandi Maulana                                       |
+| NIM : 251011400330                                        |
++----------------------------------------------------------+
+
+Swagger UI / Postman
+
+1️⃣ Endpoint: GET /blockchain/value
+----------------------------------
+Response (JSON):
+{
+  "value": 42,
+  "blockNumber": 123456,
+  "updatedAt": "2026-01-10T08:00:00Z"
+}
+
+2️⃣ Endpoint: GET /blockchain/events
+------------------------------------
+Response (JSON):
+[
+  { "blockNumber": "123450", "value": "10", "txHash": "0xabc..." },
+  { "blockNumber": "123455", "value": "20", "txHash": "0xdef..." }
+]
+
++----------------------------------------------------------+
+| Terminal: Backend Running                                |
+| Command: npm run start:dev                               |
+| Output: Nest application successfully started           |
+| URL: http://localhost:3000/api/blockchain/value          |
++----------------------------------------------------------+
+
+Footer / Notes:
+- Backend NestJS connected to Avalanche Fuji RPC
+- API read-only, smart contract is source of truth
+- Screenshot siap di-upload (PNG/JPG ≤ 1MB)
